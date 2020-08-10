@@ -4,16 +4,19 @@ import React from 'react';
 
 export default class ImageList extends React.Component {
     render() {
+
         return ( 
-            <section>
-                <div className="image-container">
-                    <ul>
-                        {this.props.data.map(item => 
-                            <ImageItem title={item.title} picture={item.url}/>
-                        )}
-                    </ul>
-                </div>
-            </section>    
+            <div>
+                <section>
+                    <div className="image-container">
+                        <ul>
+                            {this.props.data.map(item => 
+                                <ImageItem key={item.title} title={item.title} picture={item.url}/>
+                            )}
+                        </ul>
+                    </div>
+                </section>    
+            </div>
         )
     }
 }
@@ -32,3 +35,4 @@ class ImageItem extends React.Component {
         )
     }
 }
+
