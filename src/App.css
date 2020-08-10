@@ -27,6 +27,11 @@ Header {
 .App-link {
   color: #61dafb;
 }
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 @keyframes App-logo-spin {
   from {
